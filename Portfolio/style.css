@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+}
+@keyframes background{
+    from {background-image: url(donder.jpg);}
+    to {background-image: url(landscape.jpg);}
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url(landscape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto;
+    animation-name: background;
+    animation-duration: 5s;
+}
+.profielfoto{
+    margin-top: 5px;
+    margin-left: 7px;
+    height: 155px;
+    width: 160px;
+    border-radius: 50%;
+}
+.nav{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top:20%;
+    left: 0;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: verdana;
+    font-weight: bold;
+    width: 100%;
+    height: 90px;
+    margin: 5px 0;
+    float:left;
+    display:inline-block;
+    background-color: black;
+    color:white;
+    line-height: 90px;
+    text-align: center;
+    transition: 300ms;
+}
+.nav a:hover{
+    background-color: white;
+    color: black;
+    width: 130%;
+}
+.content{
+    position: absolute;
+    width: 930px;
+    min-height: 600px;
+    height: auto;
+    right: 0;
+    top: 10%;
+}
+.home{
+    color: white;
+    font-family: verdana;
+}
+.home h1{
+    font-size: 95px;
+    padding-right: 90px;
+    border-bottom: 1px solid white;
+}
+.home p{
+    font-size:18px;
+    padding:5px 0;
+    opacity: 0.8;
+    color: black;
+    font-family: serif;
+    font-family: arial black;  
+}
+.welcome{
+    margin-top: 30px;
+    width: 400px;
+    height: 250px;
+}
+.inputtext{
+    width: 55%;
+    height: 65px;
+    border: 3px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+    margin-bottom: 15px;
+}
+.inputmessage{
+    width: 55%;
+    height: 135px;
+    border: 3px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+}
+.label{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+}
+.submitbutton{
+    width: 160px;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-left: 119px;
+}
+.contactform{
+    align-content: center;
+}
+.contactform h2{
+    font-size: 80px;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+.contactp1{
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
+    width: 400px;
+    font-size: 18px;
+}
+.contactp2{
+    float: right;
+    margin-right: 30px;
+    width: 400px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    height: 500px;
+}
+.contactform iframe{
+    width: 400px;
+    margin-top: 30px;
+    height: 300px;
+}
+.tablehobby{
+    margin-top: 30px;
+}
+.hobby h2{
+    font-size: 95px;
+    padding-right: 90px;
+    border-bottom: 1px solid white;
+}
+.hobbyimg{
+    height: 150px;
+    width: 300px;
+}
+.sporttekst{
+    float: right;
+    margin-top: 50px;
+    width: 500px;
+    margin-right: 40px;
+    height: 150px;
+    text-align: justify;
+    font-family: monospace;
+    font: 30px;
+}
+.gamingtekst{
+    float: right;
+    margin-top: 10px;
+    width: 500px;
+    margin-right: 40px;
+    height: 160px;
+    text-align: justify;
+    font-family: monospace;
+    font: 30px;
+}
+.project h1{
+    font-size: 80px;
+    padding-right: 90px;
+    border-bottom: 1px solid white;
+}
+.project table{
+    margin-top: 20px;  
+}
+.project th{
+    height: 50px;
+}
+.project h2{
+    font-size: 30px;
+    border-bottom: 1px solid white;
+    margin-top: 90px;
+}
+.project iframe{
+    margin-top: 30px;
+    width: 400px;
+    height: 200px;
+}
+.skillbar{
+    float: right;
+    width: 500px;
+    margin-right: 70px;
+    box-sizing: border-box
+}
+.skillbar h3{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.skillbar p{
+    font-weight: bold;
+}
+.container {
+    width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding: 5px;
+  color: white;
+}
+
+.html {width: 80%; background-color: #4CAF50;}
+.css {width: 75%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.java {width: 80%; background-color: #808080;}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;;
+    color: white;
+    text-align: center;
+}
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.space{
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
